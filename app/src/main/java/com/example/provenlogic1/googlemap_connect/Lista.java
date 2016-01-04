@@ -11,6 +11,8 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+
 
 /**
  * Created by Mely on 02-Jan-16.
@@ -30,7 +32,11 @@ public class Lista extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.lista);
+        lv=(ListView)findViewById(R.id.list);
         seleccionado = (TextView) findViewById(R.id.seleccionado);
+        lv.setAdapter(new ArrayAdapter<String>(this,
+                android.R.layout.simple_list_item_1, new ArrayList<String>()));
+        new MyTask().execute();
 
 
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
