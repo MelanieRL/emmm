@@ -3,4 +3,5 @@
     <string name="hello">Hello World, ListDemoActivity!</string>
     <string name="app_name">ListDemo</string>
     <string name="opcion">Has seleccionado:</string>
+    <string name="widget">widget</string>
 </resources>
