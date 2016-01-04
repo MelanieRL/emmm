@@ -4,4 +4,5 @@
     <string name="app_name">ListDemo</string>
     <string name="opcion">Has seleccionado:</string>
     <string name="widget">widget</string>
+    <string name="next_offer">Oferta Siguiente</string>
 </resources>
