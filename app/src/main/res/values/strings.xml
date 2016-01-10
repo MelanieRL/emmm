@@ -5,4 +5,7 @@
     <string name="opcion">Has seleccionado:</string>
     <string name="widget">widget</string>
     <string name="next_offer">Oferta Siguiente</string>
+    <string name="logo">Saboreapp Logo</string>
+    <string name="asMap">Ver como Mapa</string>
+    <string name="asList">Ver como Lista</string>
 </resources>
