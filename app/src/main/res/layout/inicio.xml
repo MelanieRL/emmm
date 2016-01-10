@@ -27,9 +27,10 @@
         android:id="@+id/button"
         android:layout_columnSpan="4"
         android:layout_gravity="center_horizontal|top"
-        android:clickable="false"
+        android:onClick="iniciar"
         android:textColor="#fff"
-        android:background="#457DD7" />
+        android:background="#457DD7"
+        android:layout_width="136dp" />
 
     <Button
         android:text="@string/asList"
