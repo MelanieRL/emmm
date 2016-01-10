@@ -1,7 +1,11 @@
 package com.example.provenlogic1.googlemap_connect;
+
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.ContextThemeWrapper;
 import android.view.View;
 
 /**
@@ -23,9 +27,7 @@ public class inicio extends Activity{
         startActivity(mainIntent);
 
 
-        // Close the activity so the user won't able to go back this
-        // activity pressing Back button
-        finish();
+       // finish();
     }
     public void lista(View view) {
         Intent mainIntent = new Intent().setClass(
@@ -33,11 +35,26 @@ public class inicio extends Activity{
 
         startActivity(mainIntent);
 
-
-        // Close the activity so the user won't able to go back this
-        // activity pressing Back button
-        finish();
+// finish();
     }
+    @Override
+    public void onBackPressed() {
 
+        AlertDialog.Builder builder = new AlertDialog.Builder(new ContextThemeWrapper(this, R.style.AlertDialogCustom));
+                builder.setIcon(android.R.drawable.ic_dialog_alert)
+                .setTitle("SaboreAPP")
+                .setMessage("Estas seguro de que quieres salir?")
+                .setPositiveButton("SI", new DialogInterface.OnClickListener()
+                {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        finish();
+                    }
+
+                })
+                .setNegativeButton("NO", null)
+                .show();
+
+    }
 
 }

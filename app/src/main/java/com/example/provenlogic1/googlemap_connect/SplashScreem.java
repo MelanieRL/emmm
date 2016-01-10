@@ -38,7 +38,7 @@ public class SplashScreem extends Activity {
 
                 // Start the next activity
                 Intent mainIntent = new Intent().setClass(
-                        SplashScreem.this, login.class);
+                        SplashScreem.this, FACEBOOK.class);
                 startActivity(mainIntent);
 
                 // Close the activity so the user won't able to go back this

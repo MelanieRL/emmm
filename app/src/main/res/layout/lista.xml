@@ -1,27 +1,25 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    >
-    <TextView
-        android:id="@+id/seleccionado"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:textColor="#A4C639"
-        android:textSize="20dip"
-        android:text="@string/opcion"
-        />
-    <ListView
-        android:id="@+id/list"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:drawSelectorOnTop="false"
-        />
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp" tools:context=".main"
+    android:orientation="vertical">
+
     <ProgressBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/progerss_bar"
-        style="?android:attr/progressBarStyleHorizontal"
+        style="Widget.MyApp.HeaderBar.Spinner"
         />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list_view">
+
+    </ListView>
+
+
+
 </LinearLayout>
